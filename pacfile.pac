@@ -5,7 +5,7 @@ function FindProxyForURL(url, host) {
     ];
 
     if (parts.some(v => url.includes(v))) {
-      return "HTTP 127.0.0.1:1080; SOCKS5 127.0.0.1:1080; PROXY 127.0.0.1:1080; DIRECT";
+      return "HTTP 127.0.0.1:1080; SOCKS5 127.0.0.1:1086; PROXY 127.0.0.1:1080; DIRECT";
     }
 
     return "DIRECT";
